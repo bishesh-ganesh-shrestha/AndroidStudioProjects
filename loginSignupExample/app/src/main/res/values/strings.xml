@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LoginSignupExample</string>
+    <string name="hello_welcome_back">Welcome back!</string>
+    <string name="title_description">Hello, you must login first to be able to use the application and enjoy all the features of Calashop.</string>
+</resources>

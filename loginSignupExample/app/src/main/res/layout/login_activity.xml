@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="24dp">
 
@@ -26,6 +27,12 @@
         android:layout_height="wrap_content"
         android:hint="Email Address"
         android:layout_marginTop="24dp"
+        android:layout_marginBottom="10dp"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="10dp"
+        android:background="@drawable/customdrawableedittext"
         />
 
     <EditText
@@ -34,6 +41,11 @@
         android:layout_height="wrap_content"
         android:hint="Password"
         android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:drawableStart="@drawable/ic_password"
+        android:drawablePadding="10dp"
+        android:background="@drawable/customdrawableedittext"
         />
 
     <RelativeLayout
@@ -60,9 +72,11 @@
         android:id="@+id/signInButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sign in"
+        android:text="Log In Bro"
         android:textAllCaps="false"
-        android:layout_marginTop="48dp"/>
-
+        app:backgroundTint="@null"
+        android:background="@drawable/customdrawablebutton"
+        android:textColor="@color/white"
+        android:layout_marginTop="24dp"/>
 
 </LinearLayout>

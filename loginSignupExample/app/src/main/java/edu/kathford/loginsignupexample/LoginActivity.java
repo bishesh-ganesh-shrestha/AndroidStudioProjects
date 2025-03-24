@@ -1,6 +1,7 @@
 package edu.kathford.loginsignupexample;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -39,6 +40,9 @@ public class LoginActivity extends AppCompatActivity {
                     pwEditText.setError("Password missing");
                 }else{
                     Toast.makeText(LoginActivity.this, "Login Success", Toast.LENGTH_LONG).show();
+
+                    Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
+                    startActivity(intent);
                 }
 
                 Log.d("Email", email);
